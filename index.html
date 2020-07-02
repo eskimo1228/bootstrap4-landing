@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>ReVet</title>
+  <meta name="description" content="">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>body {
+    opacity: 0;
+    overflow-x: hidden;
+  }
+
+  html {
+    background-color: #fff;
+  }</style>
+</head>
+
+<body>
+
+<header class="bg-company">
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="collapsed navbar-toggle" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-3" aria-expanded="false"><span
+                class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+          <span class="icon-bar"></span></button>
+        <a href="/" class="navbar-brand">
+          <span class="logo"></span>
+        </a></div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
+        <ul class="nav navbar-nav">
+          <li><a href="/app/jobs/new">Employers / Post Job</a></li>
+          <li><a href="/app/resumes/search">Find Resumes</a></li>
+          <li><a href="/job.html">For Job Seekers</a></li>
+        </ul>
+        <a href="/app/sign-in-company" class="btn btn-primary navbar-btn pull-right padding-horizontal-50 btn-signin-company padding-vertical-10">Company<br/>Sign in</a>
+        <a href="/app/join-now-company" class="btn btn-link navbar-btn pull-right padding-horizontal-40">Company Sign up</a>
+      </div>
+    </div>
+  </nav>
+  <div class="jumbotron padding-horizontal-0 padding-bottom-0 margin-bottom-10">
+    <div class="container">
+      <h1 class="margin-top-40 margin-bottom-10"><b><span class="text-primary">Find better <br>employees</span></b></h1>
+      <p class="h2 margin-bottom-40"><b>Easily connect with candidate <br> references</b></p>
+      <p><a class="btn btn-primary padding-horizontal-50" href="/app/join-now" role="button">Get started with free account</a></p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="company-video margin-bottom-10" style="min-width:270px;max-width:444px;width: 50%;">
+      <div id="play-btn" class="btn-play">
+        <img  alt="video" src="img/Play.png"/>
+      </div>
+      <img id="video-thumbnail" class="video-thumbnail" src="img/video-preview.png"/>
+      <video id="company-video" src="https://prod-revet-content.s3.amazonaws.com/FNL_ReVet.mp4" ></video>
+    </div>
+  </div>
+  
+</header>
+<div class="container">
+
+  <div class="well well-lg padding-top-0">
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="refs"></div>
+        <h3><b>Request References </b></h3>
+        <p>Invite your current job candidates to
+          provide their references through ReVet.
+        </p>
+        <p class="text-primary">3 requests per month - Free</p>
+      </div>
+      <div class="col-sm-4">
+        <div class="jobs"></div>
+        <h3><b>Post a Job </b></h3>
+        <p>Let ReVet job seekers with
+          references know your're hiring. </p>
+        <p class="text-primary">3 posts per month - Free </p>
+      </div>
+      <div class="col-sm-4">
+        <div class="candid"></div>
+        <h3><b>Search for Candidates </b></h3>
+        <p>Search for candidates with references,
+          and send invitations for your open positions. </p>
+        <p class="text-primary">3 searches per month - Free </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row cta margin-bottom-80 bg-white">
+    <div class="col-sm-12">
+      <h2 class="margin-bottom-30"><b>Search for Candidates</b></h2>
+      <form>
+        <div class="row">
+          <div class="col-sm-5 form-group">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+              <input type="text" class="form-control search-resume" placeholder="Search for Jobs (e.g. Technician)">
+            </div>
+          </div>
+          <div class="col-sm-4 form-group">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
+              <input type="text" class="form-control search-location" placeholder="Location (city)">
+            </div>
+            <div class="col-sm-12">
+              <div class="dropdown-menu panel-body search-location-result" style="width:100%;"></div>
+            </div>
+          </div>
+          <div class="col-sm-3 form-group">
+            <button type="submit" class="btn btn-primary find-candidates">Find Candidates</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="row padding-vertical-80">
+    <div class="col-sm-6">
+      <div class="padding-left-30">
+        <img src="img/logo_check.png" alt="img" class="margin-bottom-20 margin-top-80">
+        <h2><b>Find better
+          candidates </b></h2>
+        <p>Search for candidates with easy-to-contact references who are ready to speak with you.
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <img src="img/c1.jpg" alt="img" class="img-responsive">
+    </div>
+  </div>
+
+  <div class="row padding-vertical-80">
+    <div class="col-sm-6">
+      <img src="img/c2.jpg" alt="img" class="img-responsive">
+    </div>
+    <div class="col-sm-6">
+        <div class="padding-left-30">
+          <img src="img/logo_check.png" alt="img" class="margin-bottom-20 margin-top-80 margin-top-xs-10">
+        <h2><b>No wasting time <br>
+          tracking down references </b></h2>
+        <p>Candidate references provide their <br>
+          streamlined contact preferences.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row padding-vertical-80">
+    <div class="col-sm-6">
+      <div class="padding-left-30">
+        <img src="img/logo_check.png" alt="img" class="margin-bottom-20 margin-top-80 margin-top-xs-10">
+        <h2><b>Post Jobs & attract better <br>
+          candidates with references</b></h2>
+        <p>ReVet candidates understand the <br>
+          importance of references and organize <br>
+          theirs for you to reach easily.
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <img src="img/c3.jpg" alt="img" class="img-responsive">
+    </div>
+  </div>
+
+  <div class="row padding-vertical-80">
+    <div class="col-sm-6">
+      <img src="img/c4.jpg" alt="img" class="img-responsive">
+    </div>
+    <div class="col-sm-6">
+      <div class="padding-left-30">
+        <img src="img/logo_check.png" alt="img" class="margin-bottom-20 margin-top-80 margin-top-xs-10">
+        <h2><b>Get current candidate <br>
+          references through ReVet </b></h2>
+        <p>Let ReVet organize your current candidate's references<br>
+           with a simple invite link.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row padding-vertical-80">
+    <div class="col-sm-6">
+      <div class="padding-left-30">
+        <img src="img/logo_check.png" alt="img" class="margin-bottom-20 margin-top-80">
+        <h2><b>Candidate Summary Reviews </b></h2>
+        <p>No time to check every reference? No  problem. <br>Read reference's Summary
+          Review of your candidate.
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <img src="img/c5.jpg" alt="img" class="img-responsive">
+    </div>
+  </div>
+
+  <div class="padding-vertical-80 margin-bottom-0 bg-form margin-top-50">
+
+    <div class="row">
+      <div class="col-md-6 float-none center-block">
+        <form id="company-form" class="login-form">
+          <h2 class="text-center margin-bottom-30"><b>Get started with <br><span class="text-primary">a free account</span></b></h2>
+          <div class="form-group">
+            <label class="sr-only" for="companyName">Company name</label>
+            <input type="text" name="companyName" id="companyName" tabindex="1" class="form-control" placeholder="Company name" value="">
+            <span class="help-block">Please fill out this field.</span>
+          </div>
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <label class="sr-only" for="firstName">First name</label>
+              <input type="text" name="firstName" id="firstName" tabindex="1" class="form-control" placeholder="First name" value="">
+              <span class="help-block">Please fill out this field.</span>
+            </div>
+            <div class="col-md-6 form-group">
+              <label class="sr-only" for="lastName">Last name</label>
+              <input type="text" name="lastName" id="lastName" tabindex="1" class="form-control" placeholder="Last name" value="">
+              <span class="help-block">Please fill out this field.</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="userName">Email</label>
+            <input type="text" name="userName" id="userName" tabindex="1" class="form-control" placeholder="Email" value="">
+            <span class="help-block">Please insert a valid e-mail address.</span>
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="password">Password</label>
+            <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+            <span class="help-block">Password is too simple.</span>
+          </div>
+          <div class="form-group text-center padding-horizontal-30 margin-vertical-20">
+            <div class="checkbox-custom checkbox-primary">
+              <input type="checkbox" tabindex="3" class="" name="remember1" id="remember1">
+              <label for="remember1" class="small"> I accept ReVet's <a href="/app/user-agreement">User Agreement</a>, <a href="/app/privacy-policy">Privacy Policy</a>, and
+                <a href="/app/cookie-policy">Cookie Policy</a>. </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="btn btn-block btn-primary btn-lg" value="Join now">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="padding-80 well">
+    <div class="row">
+      <div class="col-sm-3 margin-bottom-40">
+        <h5 class="margin-bottom-40"><b>For Job Seekers</b></h5>
+        <ul class="list-unstyled">
+          <li class="margin-bottom-10"><a href="/app/join-now" class="text-muted">Find Jobs</a></li>
+          <li class="margin-bottom-10"><a href="/app/my/invite-reference" class="text-muted">Invite References</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3 margin-bottom-40">
+        <h5 class="margin-bottom-40"><b>For Employers</b></h5>
+        <ul class="list-unstyled">
+          <li class="margin-bottom-10"><a href="/app/join-now-company" class="text-muted">Post Job</a></li>
+          <li class="margin-bottom-10"><a href="/app/join-now-company" class="text-muted">Request Reference</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3 margin-bottom-40">
+        <h5 class="margin-bottom-40"><b>About Us</b></h5>
+        <ul class="list-unstyled">
+            <li class="margin-bottom-10"><a href="/about.html" class="text-muted">About ReVet</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3 margin-bottom-40 rev-dropdown">
+        <h5><b>Contact</b></h5>
+        <ul class="list-unstyled rev-dropdown-content padding-horizontal-10 padding-vertical-10">
+          <li class="margin-bottom-10">Email us at: <a href="mailto:support@revetinc.com">support@revetinc.com</a></li>
+          <li class="margin-bottom-10">Mail to: ReVet Inc. PO Box 475384 San Francisco, CA 94147</li>
+          <li class="margin-bottom-10">Customer Service: <a href="tel:1-800-210-7973">1-800-210-7973</a></li>
+        </ul>
+      </div>
+    </div>
+    <h5 class="text-center small">Copyright © <script>document.write(new Date().getFullYear())</script> - ReVet</h5>
+  </footer>
+</div>
+
+<link rel="stylesheet" href="css/main.min.css">
+<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

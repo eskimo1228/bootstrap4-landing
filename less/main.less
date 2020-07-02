@@ -1,0 +1,62 @@
+@import "bs-custom.less";
+@import "vars.less";
+@import "common";
+
+@import "utils/checkbox-radio";
+@import "utils/helper-padding";
+@import "utils/helper-margin";
+
+/*
+** themes
+*/
+// flatly
+//@import "./themes/flatly/_index";
+
+// papper
+// @import "./themes/paper/_index";
+
+// readable
+// @import "./themes/readable/_index";
+
+// superhero
+// @import "./themes/superhero/_index";
+
+.btn-signin-company {
+    line-height: 1.1em;
+}
+
+// .sign-in-menu-link {
+//     display: none;
+// }
+
+.company-video {
+    position: relative;
+    max-width: 720px;
+    padding: 0;
+}
+
+.company-video video {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;
+}
+
+.btn-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 111px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.video-thumbnail {
+    position: relative;
+    width: 100%;
+    z-index: 9;
+}

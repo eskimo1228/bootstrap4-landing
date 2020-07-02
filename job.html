@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>ReVet</title>
+  <meta name="description" content="">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>body {
+    opacity: 0;
+    overflow-x: hidden;
+  }
+
+  html {
+    background-color: #fff;
+  }</style>
+</head>
+
+<body>
+<header class="bg-job">
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="collapsed navbar-toggle" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-3" aria-expanded="false"><span
+                class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+          <span class="icon-bar"></span></button>
+        <a href="/" class="navbar-brand">
+          <span class="logo"></span>
+        </a></div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
+        <ul class="nav navbar-nav">
+          <li><a href="/app/jobs/search">Find Jobs</a></li>
+          <li><a href="/">For Companies</a></li>
+        </ul>
+        <a href="/app/sign-in" class="btn btn-primary navbar-btn pull-right padding-horizontal-70">Sign in</a>
+        <a href="/app/join-now" class="btn btn-link navbar-btn pull-right  padding-horizontal-50">Sign up</a>
+      </div>
+    </div>
+  </nav>
+  <div class="jumbotron padding-horizontal-0">
+    <div class="container">
+      <h1 class="margin-top-40 margin-bottom-10"><b class="text-primary">Find better <br>jobs and careers</b></h1>
+      <p class="h2 margin-bottom-40"><b>Let your references help</b></p>
+      <p><a class="btn btn-primary padding-horizontal-50" href="/app/join-now" role="button">Get started with free account</a></p>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="well well-lg padding-top-0 m-t--100">
+    <div class="row text-center">
+      <div class="col-sm-4 col-sm-offset-1">
+        <div class="refs"></div>
+        <h3><b>Invite References</b></h3>
+        <p>Create a powerful profile by inviting your
+          current/former supervisors, coworkers,
+          professors, and friends to provide a
+          reference.</p>
+      </div>
+      <div class="col-sm-4 col-sm-offset-2">
+        <div class="jobs"></div>
+        <h3><b>Find Jobs</b></h3>
+        <p>Search for jobs that match your
+          professional experience.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row cta margin-bottom-80 bg-white">
+    <div class="col-sm-12">
+      <h2 class="margin-bottom-30"><b>Find jobs</b></h2>
+      <form>
+        <div class="row">
+          <div class="col-sm-5 form-group">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+              <input type="text" class="form-control search-job" placeholder="Search for Jobs (e.g. Technician)">
+            </div>
+            <div class="col-sm-12">
+              <div class="dropdown-menu panel-body search-join-result" style="width:100%;"></div>
+            </div>
+          </div>
+          <div class="col-sm-5 form-group">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
+              <input type="text" class="form-control search-location" placeholder="Location (city, state, or zip code)">
+            </div>
+            <div class="col-sm-12">
+              <div class="dropdown-menu panel-body search-location-result" style="width:100%;"></div>
+            </div>
+          </div>
+          <div class="col-sm-2 form-group">
+            <button type="submit" class="btn btn-primary padding-horizontal-30 find-jobs">Find Jobs</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="row padding-vertical-80">
+    <div class="col-sm-6">
+      <div class="padding-left-30">
+        <img src="img/logo_check.png" alt="img" class="margin-bottom-20 margin-top-80">
+        <h2><b>Easily invite, update, 
+          and maintain your 
+          references</b></h2>
+        <p>User-friendly interface allows you to <br>
+          invite and manage all your references in <br>
+          just minutes.</p>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <img src="img/invite_r.jpg" alt="img" class="img-responsive">
+    </div>
+  </div>
+
+  <div class="row padding-vertical-80">
+    <div class="col-sm-6">
+      <img src="img/ref_h.jpg" alt="img" class="img-responsive">
+    </div>
+    <div class="col-sm-6">
+      <div class="padding-left-30">
+        <img src="img/logo_check.png" alt="img" class="margin-bottom-20 margin-top-80 margin-top-xs-10">
+        <h2><b>Simplify the 
+          reference process</b></h2>
+        <p>Your references will appreciate how <br>
+          quick & easy it is to vouch for you.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row padding-vertical-80">
+    <div class="col-sm-6">
+      <div class="padding-left-30">
+        <img src="img/logo_check.png" alt="img" class="margin-bottom-20 margin-top-80">
+        <h2><b>Manage your 
+          References</b></h2>
+        <p>You have complete control over who can <br>
+          connect with your references.</p>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <img src="img/apply.jpg" alt="img" class="img-responsive">
+    </div>
+  </div>
+
+  <div class="padding-vertical-80 margin-bottom-0 bg-form margin-top-50">
+
+    <div class="row">
+      <div class="col-md-6 float-none center-block">
+        <form id="login-form" class="login-form">
+          <h2 class="text-center margin-bottom-30"><b>Get started with <br><span class="text-primary">a free account</span></b></h2>
+          <div class="form-group">
+            <label class="sr-only" for="firstName">First name</label>
+            <input type="text" name="firstName" id="firstName" tabindex="1" class="form-control" placeholder="First name" value="" required >
+            <span class="help-block">Please fill out this field.</span>
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="lastName">Last name</label>
+            <input type="text" name="lastName" id="lastName" tabindex="1" class="form-control" placeholder="Last name" value="" required >
+            <span class="help-block">Please fill out this field.</span>
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="userName">Email</label>
+            <input type="text" name="userName" id="userName" tabindex="1" class="form-control" placeholder="Email" value="" required >
+            <span class="help-block">Please insert a valid e-mail address.</span>
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="password">Password</label>
+            <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password" required >
+            <span class="help-block">Password is too simple.</span>
+          </div>
+          <div class="form-group text-center padding-horizontal-30 margin-vertical-20">
+            <div class="checkbox-custom checkbox-primary">
+              <input type="checkbox" tabindex="3" class="" name="remember1" id="remember1">
+              <label for="remember1" class="small"> I accept ReVet's <a href="/app/user-agreement">User Agreement</a>, <a href="/app/privacy-policy">Privacy Policy</a>, and
+                <a href="/app/cookie-policy">Cookie Policy</a>. </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <button type="submit" name="login-submit" id="login-submit" tabindex="4" class="btn btn-block btn-primary btn-lg">Join now</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="padding-80 well">
+    <div class="row">
+      <div class="col-sm-3 margin-bottom-40">
+        <h5 class="margin-bottom-40"><b>For Job Seekers</b></h5>
+        <ul class="list-unstyled">
+          <li class="margin-bottom-10"><a href="/app/join-now" class="text-muted">Find Jobs</a></li>
+          <li class="margin-bottom-10"><a href="/app/my/invite-reference" class="text-muted">Invite References</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3 margin-bottom-40">
+        <h5 class="margin-bottom-40"><b>For Employers</b></h5>
+        <ul class="list-unstyled">
+          <li class="margin-bottom-10"><a href="/app/join-now-company" class="text-muted">Post Job</a></li>
+          <li class="margin-bottom-10"><a href="/app/join-now-company" class="text-muted">Request Reference</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3 margin-bottom-40">
+        <h5 class="margin-bottom-40"><b>About Us</b></h5>
+        <ul class="list-unstyled">
+          <li class="margin-bottom-10"><a href="/about.html" class="text-muted">About ReVet</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3 margin-bottom-40 rev-dropdown">
+        <h5><b>Contact</b></h5>
+        <ul class="list-unstyled rev-dropdown-content padding-horizontal-10 padding-vertical-10">
+          <li class="margin-bottom-10">Email us at: <a href="mailto:support@revetinc.com">support@revetinc.com</a></li>
+          <li class="margin-bottom-10">Mail to: ReVet Inc. PO Box 475384 San Francisco, CA 94147</li>
+          <li class="margin-bottom-10">Customer Service: <a href="tel:1-800-210-7973">1-800-210-7973</a></li>
+        </ul>
+      </div>
+    </div>
+    <h5 class="text-center small">Copyright © <script>document.write(new Date().getFullYear())</script> - ReVet</h5>
+  </footer>
+</div>
+
+<link rel="stylesheet" href="css/main.min.css">
+<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
